@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_ServiceLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+
+<body>
+
+
+
+    <!--header-->
+    
+    <!--//header-->
+    <!-- Services banner -->
+    @Html.Action("PartialFeature")
+    <!-- //Services banner -->
+    <!-- Services Section -->
+    @Html.Action("PartialServices")
+    <!-- //Services Section -->
+
+
+    @Html.Action("PartialForum")
+
+
+    <!-- footer -->
+    
+    <!-- //footer -->
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+   @Html.Action("PartialScript")
+
+</body>
+
+</html>
